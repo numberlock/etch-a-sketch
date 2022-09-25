@@ -43,14 +43,3 @@ button.addEventListener("click", () => {
   removeDiv();
   createDiv();
 });
-
-let rainbow = function () {
-  let randomNumber = Math.floor(Math.random() * 255);
-  let R = randomNumber;
-  let G = randomNumber;
-  let B = randomNumber;
-};
-rainbow();
-
-//create a function that makes hover rainbow colored
-//random rgb + 10% darker everytime
