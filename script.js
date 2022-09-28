@@ -21,6 +21,7 @@ function createGrid(number) {
 }
 
 createGrid(16);
+
 let removeDiv = function () {
   document.querySelectorAll(".container-div").forEach((div) => {
     div.remove();
@@ -32,10 +33,8 @@ let createDiv = function () {
     alert("pick a number lower then 100!");
   } else {
     createGrid(buttonPrompt);
-    container.style["grid-template-columns"] =
-      "repeat(" + buttonPrompt + ", minmax(10px, 10px))";
-    container.style["grid-template-rows"] =
-      "repeat(" + buttonPrompt + ", minmax(10px, 10px))";
+    container.style["grid-template-columns"] = `repeat(${buttonPrompt}, 1fr)`;
+    container.style["grid-template-rows"] = `repeat(${buttonPrompt}, 1fr)`;
   }
 };
 
